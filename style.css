@@ -1,0 +1,129 @@
+.tabela {
+    width: 199px;
+    display: flex;
+}
+.table {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 50px ;
+    grid-template-areas:
+    'opCabecalho'
+    'valorCabecalho'
+    ;
+    width: 169px;
+    text-align: center;
+}
+
+.opCabecalho {
+    grid-area: opCabecalho;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    background-color: coral;
+
+}
+.valorCabecalho {
+    grid-area: valorCabecalho;
+    grid-column: 2/2;
+    grid-row: 1/1;
+    background-color: rgb(250, 157, 124);
+}
+.tableOp {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-areas:
+    'opCabecalho'
+    'valorCabecalho'
+    'opSoma'
+    'opMultiplicao'
+    'opDivisao'
+    'opResDivisao'
+;
+    width: 169px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: -169px;
+}
+.tableValor {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-areas:
+    'valorSoma'
+    'valorMultiplicacao'
+    'valorDivisao'
+    'valorResDivisao'
+    ;
+    margin-top: 40px;
+    margin-left: -58px;
+
+}
+
+.opCabecalho ,.valorCabecalho {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+}
+.opSoma {
+    grid-area: opSoma;
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+.opMultiplicacao {
+    grid-area: opMultiplicacao;
+    grid-column: 1/1;
+    grid-row: 2/2;
+
+}
+.opDivisao {
+    grid-area: opDivisao;
+    grid-column: 1/1;
+    grid-row: 3/3;
+
+}
+.opResDivisao {
+    grid-area: opResDivisao;
+    grid-column: 1/1;
+    grid-row: 4/4;
+
+}
+.valorSoma {
+    grid-area: valorSoma;
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+.valorMultiplicacao {
+    grid-area: valorMultiplicacao;
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+.valorDivisao {
+    grid-area: valorDivisao;
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+.valorResDivisao {
+    grid-area: valorResDivisao;
+    grid-column: 1/1;
+    grid-row: 4/4;
+}
+.td-margin {
+    margin-top: 45px;
+}
+.d-flex{
+    display: flex;
+    flex-direction: column;
+}
+.valorSoma,.valorMultiplicacao,.valorDivisao,.valorResDivisao {
+    height: 30px; 
+    background-color: rgb(250, 157, 124);
+    text-align: center;
+    line-height: 30px;
+
+}
+.opSoma,.opMultiplicacao,.opDivisao,.opResDivisao {
+    height: 30px;
+    background-color: coral;
+    line-height: 30px;
+    
+}
